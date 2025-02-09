@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    border: border-box;
+}
+
+.page {
+    display: flex;
+}
+
+/*left side css */
+
+.left {
+    width: 17%;
+    height: 1300px;
+    position: fixed;
+    background-color: #fefae0;
+    animation: slideFromLeft 1s ease-out;
+}
+
+@keyframes slideFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+div.left {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.profile {
+    height: 130px;
+    width: 130px;
+    border-radius:50%;
+    background-color: #260303;
+    margin: 15px 0px 0px 25px;
+    background-image: url("images/SrushtiPhoto.png.jpg");
+    background-size: cover;
+    border: 2px solid black;
+}
+
+#name {
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+.about {
+    margin: 10px 0px 0px 10px;
+}
+
+.about:hover {
+    border-left: 3px solid black;
+    padding-left: 5px;
+}
+
+.education {
+    margin: 10px 0px 0px 10px;
+}
+
+.education:hover {
+    border-left: 3px solid black;
+    padding-left: 5px;
+}
+
+.techskills {
+    margin: 10px 0px 0px 10px;
+}
+
+.techskills:hover {
+    border-left: 3px solid black;
+    padding-left: 5px;
+}
+
+.projects {
+    margin: 10px 0px 0px 10px;
+}
+
+.projects:hover {
+    border-left: 3px solid black;
+    padding-left: 5px;
+}
+
+.contactme {
+    margin: 10px 0px 0px 10px;
+}
+
+.contactme:hover {
+    border-left: 3px solid black;
+    padding-left: 5px;
+}
+
+/* right side css */
+
+.right {
+    width: 83%;
+    height: 1350px;
+    background-color: #fdf0d5;
+    margin-left: 17%;
+    color: #8a541e;
+    animation: slideFromRight 1s ease-out;
+}
+
+@keyframes slideFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.degree {
+    height: 120px;
+    width: 820px;
+    border-radius: 15px;
+    margin-left: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+}
+
+div.degree {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.clg {
+    height: 120px;
+    width: 400px;
+    border-radius: 15px;
+    margin: 15px 0px 0px 40px;
+}
+
+div.clg {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sch {
+    height: 120px;
+    width: 400px;
+    border-radius: 15px;
+    margin: 15px 0px 0px 18px;
+}
+
+div.sch {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sch-clg {
+    display: flex;
+}
+
+.tech {
+    height: 130px;
+    width: 900px;
+    background-color: rgb(246, 213, 152);
+    border-radius: 15px;
+    margin-left: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.lang {
+    height: 90px;
+    width: 90px;
+    background-size: cover;
+    border-radius: 4px;
+}
+
+.t {
+    margin: 10px 0px 0px 10px;
+    transition: transform 0.4s ease-in-out;
+    color: #3D3E3F;
+}
+
+.t:hover {
+    transform: translateY(-5px);
+}
+
+.p {
+    height: 150px;
+    width: 150px;
+    background-size: cover;
+    border-radius: 4px;
+}
+
+.proj {
+    height: 200px;
+    width: 900px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(246, 213, 152);
+    border-radius: 15px;
+    margin-left: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.work {
+    transition: all 0.5s ease-in-out;
+}
+
+.work:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.conct {
+    height: 130px;
+    width: 900px;
+    
+    margin-left: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.c {
+    margin-left: 25px;
+    margin-top: 15px;
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: #283618;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
